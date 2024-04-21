@@ -1,0 +1,14 @@
+#signup{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+#signup_image{
+     height: 98vh;
+     width: 60vw;
+     border-radius: 1%;
+     margin: 5px;
+}

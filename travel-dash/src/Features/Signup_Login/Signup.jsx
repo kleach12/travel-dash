@@ -1,9 +1,10 @@
 import "./Signup.css";
-// import {logo} from 'Images/vite.svg'
+import hawaii from './hawaii.jpg'
 function Signup() {
   return (
-    <div id="Signup">
-    {/* <img src={logo}></img> */}
+    <div id="signup">
+    <h1>00</h1>
+    <img id = 'signup_image' src={hawaii}></img>
     </div>
   );
 }
