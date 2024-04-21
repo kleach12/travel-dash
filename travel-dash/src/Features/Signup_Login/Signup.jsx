@@ -1,7 +1,9 @@
-import './Signup.css'
+import "./Signup.css";
 
-export default function Singup(){
-    <div id='Signup'>
-
-    </div>
+function Signup() {
+  <div id="Signup">
+    <h1> hello </h1>
+  </div>;
 }
+
+export default Signup;

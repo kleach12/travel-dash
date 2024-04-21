@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 // import { useState } from 'react'
-import { Signup } from "./Features/Signup_Login/Signup";
-import {Dashboard} from './Features/Dashboard/Dashboard';
+import Signup from "./Features/Signup_Login/Signup";
+import Dashboard  from "./Features/Dashboard/Dashboard";
 import "./App.css";
 
 function App() {
