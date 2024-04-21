@@ -1,9 +1,11 @@
 import "./Signup.css";
-
+// import {logo} from 'Images/vite.svg'
 function Signup() {
-  <div id="Signup">
-    <h1> hello </h1>
-  </div>;
+  return (
+    <div id="Signup">
+    {/* <img src={logo}></img> */}
+    </div>
+  );
 }
 
 export default Signup;
