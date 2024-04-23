@@ -1,14 +1,33 @@
-#signup_column{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-    width: 50vw;
+#signup_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: left; */
+  color: #000000;
+  width: 50vw;
 }
 
-#site_name{
-font-family: "Sedan", serif;
+#site_name {
+}
+
+.sedan {
+  font-family: "Sedan", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+#auth_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.signup_input{
+    width: 20vw;
+    height: 5vh;
+    background-color:#ffffff;
+    margin: 5px;
+    color: #000000;
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
 }
