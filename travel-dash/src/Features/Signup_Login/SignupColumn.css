@@ -8,7 +8,7 @@
 }
 
 #site_name {
-    margin: 0
+  margin: 0;
 }
 
 .sedan {
@@ -17,28 +17,52 @@
   font-style: normal;
 }
 
-#auth_form{
-    display: flex;
-    flex-direction: column;
+#auth_form {
+  display: flex;
+  flex-direction: column;
 }
 
-.signup_input{
-    width: 20vw;
-    height: 3vh;
-    background-color:#ffffff;
-    margin: 5px;
-    color: #000000;
-    font-family: "Sedan", serif;
-    font-weight: 400;
-    font-style: normal;
+.signup_input {
+  width: 20vw;
+  height: 3vh;
+  background-color: #ffffff;
+  margin: 5px;
+  color: #000000;
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.signup_input:focus{
-    outline: none;
+.signup_input:focus {
+  outline: none;
 }
 
-#signup_button{
-    background-color: #000000;
-    height: 3vh;
-    margin: 5px;
+#signup_button {
+  background-color: #000000;
+  height: 3vh;
+  margin: 5px;
+}
+
+[data-amplify-authenticator] {
+  --amplify-components-authenticator-router-box-shadow: 0 0 16px
+    var(--amplify-colors-overlay-10);
+  --amplify-components-authenticator-router-border-width: 0;
+  /* --amplify-components-authenticator-form-padding: var(--amplify-space-medium), var(--amplify-space-xl); */
+  --amplify-components-button-primary-background-color: hsl(180, 100%, 7%);
+  --amplify-components-fieldcontrol-focus-box-shadow: hsl(182, 68%, 17%);
+  --amplify-components-tabs-item-active-border-color: var(
+    --amplify-colors-neutral-100
+  );
+  --amplify-components-tabs-item-color: var(--amplify-colors-neutral-80);
+  --amplify-components-tabs-item-active-color: hsl(182, 68%, 17%);
+  --amplify-components-button-link-color: hsl(180, 100%, 7%);
+  --amplify-fonts-default-variable:  Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --amplify-fonts-default-static:  Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  padding: 10px;
+}
+
+#amp_auth {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5%;
 }

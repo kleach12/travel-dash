@@ -10,6 +10,11 @@
       "StackName": "amplify-traveldash-dev-104532",
       "StackId": "arn:aws:cloudformation:us-west-1:741681138454:stack/amplify-traveldash-dev-104532/ca2786a0-ff3d-11ee-999e-02c091d37b33",
       "AmplifyAppId": "d392yeisb0dm4m"
+    },
+    "categories": {
+      "auth": {
+        "traveldash9156f65a": {}
+      }
     }
   }
 }
