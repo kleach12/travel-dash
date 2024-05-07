@@ -1,5 +1,5 @@
-import { Route, Routes } from "react-router-dom";
-import { useState } from 'react'
+import { Route, Routes, useNavigate } from "react-router-dom";
+import { useEffect, useState } from 'react'
 import Signup from "./Features/Signup_Login/Signup";
 import Dashboard from "./Features/Dashboard/Dashboard";
 import "./App.css";
@@ -12,24 +12,28 @@ import { redirect } from "react-router-dom";
 function App() {
 const [currentUser, setCurrentUser] = useState(null);
 const [currentUserId, setCurrentUserId] = useState(null);
+const navigate = useNavigate();
 
-async function currentAuthenticatedUser(){
-  try {
-    const { username, userId } = await getCurrentUser();
-    setCurrentUser(username)
-    console.log(currentUser);
-    setCurrentUserId(userId)
-    console.log(currentUserId);
-    if(username){
-      return(
-        redirect('/Dashboard')
-      )
+useEffect(() => {
+  async function currentAuthenticatedUser(){
+    try {
+      const { username, userId } = await getCurrentUser();
+      setCurrentUser(username)
+      console.log(currentUser);
+      setCurrentUserId(userId)
+      console.log(currentUserId);
+      if(username){
+        return(
+          navigate('/Dashboard')
+        )
+      }
+    } catch (err) {
+      console.log(err);
     }
-  } catch (err) {
-    console.log(err);
   }
-}
-currentAuthenticatedUser()
+  currentAuthenticatedUser()
+},[navigate])
+
   return (
       <div id="main">
         <Routes>
