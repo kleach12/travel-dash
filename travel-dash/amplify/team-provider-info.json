@@ -14,6 +14,9 @@
     "categories": {
       "auth": {
         "traveldash9156f65a": {}
+      },
+      "function": {
+        "travelAPILambda": {}
       }
     }
   }

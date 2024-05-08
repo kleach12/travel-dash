@@ -1,0 +1,12 @@
+{
+  "resourceName": "travelDynamo",
+  "tableName": "travelDynamo",
+  "partitionKey": {
+    "fieldName": "user_id",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": [
+    "travelDynamoTrigger6705bd18"
+  ]
+}

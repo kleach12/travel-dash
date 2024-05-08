@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/travelAPI": {
+      "name": "/travelAPI",
+      "lambdaFunction": "travelAPILambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
