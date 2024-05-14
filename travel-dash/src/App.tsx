@@ -7,11 +7,13 @@ import { Amplify } from "aws-amplify";
 import config from "./amplifyconfiguration.json";
 Amplify.configure(config);
 import { getCurrentUser } from 'aws-amplify/auth';
-import { redirect } from "react-router-dom";
+
+interface User{
+  user: Object;
+}
 
 function App() {
-const [currentUser, setCurrentUser] = useState(null);
-const [currentUserId, setCurrentUserId] = useState(null);
+const [currentUser, setCurrentUser] = useState<User>({user: {}});
 const navigate = useNavigate();
 
 useEffect(() => {
